@@ -1,0 +1,16 @@
+version: '3'
+services:
+  telemonitor:
+    image: tele:latest
+    restart: always
+    container_name: telemonitor
+    environment:
+      - TG_CHAT_ID=1057462948
+      - TG_API_TOKEN=7211737373:AAH0W4YVzvBRBp8jaMp0DrPxKlqNQpaOfrI
+      - TG_API_BASE_URL=https://api.telegram.org/bot
+      - TTS_TYPE=/host
+    network_mode: host
+    pid: host
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - /:/host:ro

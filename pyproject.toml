@@ -1,0 +1,19 @@
+[tool.pdm]
+distribution = false
+[project]
+name = "tgbot-tts"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Colin", email = "1527190079@qq.com"},
+]
+dependencies = [
+    "edge-tts>=6.1.12",
+    "telegram>=0.0.1",
+    "python-telegram-bot[job-queue]>=21.3",
+    "python-dotenv>=1.0.1",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
